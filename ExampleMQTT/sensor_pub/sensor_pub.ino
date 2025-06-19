@@ -6,11 +6,11 @@
 #define DHTPIN 2   // D4 = GPIO2 en NodeMCU
 #define DHTTYPE DHT22
 
-const char* ssid = "iPhone adri";
-const char* password = "adri98766";
+const char* ssid = "";
+const char* password = "";
 
 const char* mqtt_user = "mqtt-temperature";
-const char* mqtt_pass = "mjTW00WWJE41Lsn6";
+const char* mqtt_pass = "";
 const char* mqtt_server = "mqtt-temperature.cloud.shiftr.io";
 const int mqtt_port = 1883;
 
