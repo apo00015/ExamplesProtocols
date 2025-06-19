@@ -40,8 +40,6 @@ Este proyecto utiliza una placa **ESP8266 NodeMCU** y un sensor **DHT22** para m
 
 - Broker: `mqtt-temperature.cloud.shiftr.io`
 - Puerto: `1883`
-- Usuario: `mqtt-temperature`
-- Contraseña: `mjTW00WWJE41Lsn6`
 
 > Este broker fue creado en [Shiftr.io](https://shiftr.io), una plataforma de visualización y gestión MQTT.
 
@@ -70,4 +68,3 @@ Instala estas librerías desde el Gestor de Librerías:
 ## 📺 Monitor Serie
 
 - Velocidad: **9600 baudios**
-- Ejemplo de salida:
