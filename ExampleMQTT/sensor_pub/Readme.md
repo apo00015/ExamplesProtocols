@@ -10,8 +10,6 @@ Este proyecto utiliza una placa **ESP8266 NodeMCU** y un sensor **DHT22** para m
 - Protoboard y cables
 - Red WiFi (en este caso, hotspot desde un iPhone)
 
----
-
 ## 🔧 Conexiones
 
 | DHT22 Pin | NodeMCU Pin | Descripción       |
@@ -21,8 +19,6 @@ Este proyecto utiliza una placa **ESP8266 NodeMCU** y un sensor **DHT22** para m
 | `–`       | GND         | Tierra            |
 
 > ⚠️ No usar 5V. La placa ESP8266 funciona a 3.3V.
-
----
 
 ## 🚀 Cómo funciona
 
@@ -34,8 +30,6 @@ Este proyecto utiliza una placa **ESP8266 NodeMCU** y un sensor **DHT22** para m
      - `casa/salon/temperatura`
      - `casa/salon/humedad`
 
----
-
 ## 📡 Configuración del broker MQTT
 
 - Broker: `mqtt-temperature.cloud.shiftr.io`
@@ -43,16 +37,12 @@ Este proyecto utiliza una placa **ESP8266 NodeMCU** y un sensor **DHT22** para m
 
 > Este broker fue creado en [Shiftr.io](https://shiftr.io), una plataforma de visualización y gestión MQTT.
 
----
-
 ## 🧪 MQTT Topics
 
 | Topic                     | Contenido    |
 |---------------------------|--------------|
 | `casa/salon/temperatura` | Temperatura en ºC |
 | `casa/salon/humedad`     | Humedad relativa % |
-
----
 
 ## 🧰 Dependencias (Arduino IDE)
 
@@ -62,8 +52,6 @@ Instala estas librerías desde el Gestor de Librerías:
 - **PubSubClient** (por Nick O'Leary)
 - **DHT sensor library** (por Adafruit)
 - **Adafruit Unified Sensor** (dependencia del DHT)
-
----
 
 ## 📺 Monitor Serie
 

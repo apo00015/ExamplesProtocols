@@ -2,7 +2,7 @@
 
 Este proyecto implementa un servidor Modbus TCP simulado usando la librería pymodbus. El servidor actúa como un dispositivo esclavo industrial, actualizando periódicamente sus registros de entrada con valores aleatorios, lo que permite simular datos de sensores reales para pruebas o desarrollos sin hardware físico.
 
-## Ejecución
+## Ejecución del esclavo Modbus
 
 Para poder ejecutar el servidor, bastará con levantar los contenedores con los siguientes comandos
 
@@ -11,7 +11,7 @@ docker build -t modbus-server .
 docker run --name modbus_slave -p 5020:5020 modbus-server
 ```
 
-## Funcionamiento del script
+## Funcionamiento del esclavo Modbus
 
 - Inicia un servidor Modbus TCP asíncrono.
 - Define 4 bloques de memoria:
@@ -36,7 +36,7 @@ Este script permite simular un cliente Modbus TCP capaz de realizar lecturas y e
 pip install pymodbus
 ```
 
-## Ejecución
+## Ejecución del maestro Modbus
 
 ```bash
 python3 master_modbus.py <tipo_operacion> [direccion] [valor]
@@ -50,7 +50,7 @@ python3 master_modbus.py <tipo_operacion> [direccion] [valor]
 | direccion  | int  | Dirección del registro a leer o escribir (offset) | Solo en w |
 |  valor | bool  |  Valor a escribir en el registro | Solo en w |
 
-## Funcionamiento del script
+## Funcionamiento del maestro Modbus
 
 El script asume que hay un servidor Modbus TCP escuchando en:
 
